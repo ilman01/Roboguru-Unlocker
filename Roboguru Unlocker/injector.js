@@ -4,30 +4,12 @@ window.addEventListener("load", function() {
 
 function main() 
 {
-
-    addStyle(`
-    .chakra-stack{
-        max-height: none;
-        -webkit-mask-image: none;
-    }
-    
-    .question-content.css-zmelcr {
-        margin-bottom: 15rem;
-    }
-    
-    .question-content{
-        max-height: none !important;
-        -webkit-mask-image: none !important;
-    }
-    
-    .chakra-stack.css-ujz8lb{
-        display: none;
-    }
-    
-    .chakra-stack.css-1c77zrq{
-        display: none;
-    }
-    `);
+    fetch('https://raw.githubusercontent.com/ilman01/Roboguru-Unlocker/main/css/bypasser.css')
+    .then(response => response.text())
+    .then((data) => {
+        console.log(data)
+        addStyle(data)
+    })
 }
 
 function addStyle(styleString) {

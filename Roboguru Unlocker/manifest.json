@@ -8,7 +8,7 @@
   "content_scripts": [
     {
         "matches": ["https://roboguru.ruangguru.com/*"],
-        "css": ["bypasser.css"]
+        "js": ["injector.js"]
     }
   ]
 }

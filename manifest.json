@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  
+  "name": "Roboguru Unlocker",
+  "version": "1.0",
+  "description": "Unlock and bypass roboguru.",
+  
+  "content_scripts": [
+    {
+        "matches": ["https://roboguru.ruangguru.com/*"],
+        "css": ["bypasser.css"]
+    }
+  ]
+}

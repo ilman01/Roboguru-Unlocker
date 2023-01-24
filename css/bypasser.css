@@ -21,5 +21,9 @@
 }
 
 .lock-discussions {
+    max-height: none;
+    overflow: hidden;
+    pointer-events: none;
     mask-image: none;
+    -webkit-mask-image: none;
 }

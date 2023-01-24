@@ -1,5 +1,8 @@
 window.addEventListener("load", function() {
     window.setTimeout(main,1000)
+    setInterval(function(){
+        window.setTimeout(main,1000)
+      }, 3000);
 }, false);
 
 function main() 
